@@ -1,0 +1,11 @@
+
+
+login:
+- [{"userAccount":"15167168967","userPwd":"123456"},{"rcode":0,"scode":0}]
+- [{"userAccount":"15167168967","userPwd":"1234567"},{"rcode":1,"scode":104}]
+- [{"userAccount":"15167168967","userPwd":""},{"rcode":1,"scode":100}]
+- [{"userAccount":"","userPwd":"123456"},{"rcode":1,"scode":100}]
+- [{"userAccount":"","userPwd":""},{"rcode":1,"scode":100}]
+- [{"userAccount":"None","userPwd":"None"},{"rcode":1,"scode":104}]
+
+
