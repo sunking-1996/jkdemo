@@ -3,6 +3,7 @@ import os
 import allure
 from common.read_data import data
 from common.logger import logger
+# import dingmessage
 
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
@@ -16,8 +17,11 @@ def get_data(yaml_file_name):
     else:
         return yaml_data
 
-
 test_data = get_data("test_data.yml")
+
+# ding = dingmessage.DingDingWebHook()
+# ding.dingTalk()
+
 
 
 
@@ -26,9 +30,9 @@ def step_first():
     logger.info("******************************")
     logger.info("前置步骤开始 ==>> 清理数据")
 
-
 @allure.step("后置步骤 ==>> 清理数据")
 def step_last():
+    logger.info("******************************")
     logger.info("后置步骤开始 ==>> 清理数据")
 
 
