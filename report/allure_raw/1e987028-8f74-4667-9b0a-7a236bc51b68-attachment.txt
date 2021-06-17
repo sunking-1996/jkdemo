@@ -1,0 +1,1 @@
+{'rcode': 1, 'scode': 1, 'data': '寄件地址省市区不符合规范，请重新选择或删除重建', 'status': None, 'nowTime': 1623321309}

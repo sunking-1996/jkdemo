@@ -1,11 +1,90 @@
-
-
 login:
-- [{"userAccount":"15167168967","userPwd":"123456"},{"rcode":0,"scode":0}]
-- [{"userAccount":"15167168967","userPwd":"1234567"},{"rcode":1,"scode":104}]
-- [{"userAccount":"15167168967","userPwd":""},{"rcode":1,"scode":100}]
-- [{"userAccount":"","userPwd":"123456"},{"rcode":1,"scode":100}]
-- [{"userAccount":"","userPwd":""},{"rcode":1,"scode":100}]
-- [{"userAccount":"None","userPwd":"None"},{"rcode":1,"scode":104}]
+  #账号,密码,返回rcode,返回scode
+  #userAccount,userPwd,rcode,scode
+  #正确入参
+  - [15167168967, 123456, 0, 0]
+  #密码错误
+  - [15167168967, 1234567, 1, 104]
+  #密码为空
+  - [15167168967, '', 1, 100]
+  #账号为空
+  - ['', 123456, 1, 100]
+  #账号密码为空
+  - ['', '', 1, 100]
+  #账号密码None
+  - [null, null, 1, 104]
+
+savePackages:
+  #寄件人姓名,寄件人手机号,寄件人电话号码,寄件人省,寄件人市,寄件人区,寄件人详细地址,consigneeAddressCount,收件人信息列表,packageAmts,类别,备注,返回rcode,返回scode
+  #shippingName,shippingMobile,shippingPhone,shippingProvince,shippingCity,shippingArea,shippingAddress,consigneeAddressCount,consigneeAddressList,packageAmts,packageCategory,packageNote,rcode,scode
+  #正确入参
+  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 0, 0]
+  #寄件人姓名空参
+  - ["", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  #寄件人地址空参
+  - ["接口测试寄件人", 15167168966, '', "", "", "", "", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  #寄件人号码空参
+  - ["接口测试寄件人", '', '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  #寄件人号码错参
+  - ["接口测试寄件人", 10086, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  #寄件人地址错参
+  - ["接口测试寄件人", 15167168966, '', "xx省", "xx市", "xx区", "xxxx", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  #收件人姓名空参
+  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  #收件人号码空参
+  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  #收件人地址空参
+  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"","consigneeCity":"","consigneeArea":"","consigneeAddress":""}], '', "服饰", '', 1, 1]
+  #收件人号码错参
+  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'10086',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  #收件人地址错参
+  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"xx省","consigneeCity":"xx市","consigneeArea":"xx区","consigneeAddress":"xxxx"}], '', "服饰", '', 1, 1]
+  #参数全为None
+  - [null, null, '', null, null, null, null, 1, [{"consigneeName":null,"consigneeMobile":null,"consigneePhone":"","consigneeProvince":null,"consigneeCity":null,"consigneeArea":null,"consigneeAddress":null}], '', "服饰", '', 1, 1]
+  #参数全为空
+  - ["", '', '', "", "", "", "", 1, [{"consigneeName":"","consigneeMobile":'',"consigneePhone":"","consigneeProvince":"","consigneeCity":"","consigneeArea":"","consigneeAddress":""}], '', "服饰", '', 1, 1]
+
+queryPackages:
+  #分类,是都倒序,当前页,每页显示,交易状态
+  #sort,desc,page,pageSize,status,rcode,scode
+  #待打订单每页显示10笔
+  - [createTime, true, 1, 10, 0, 0, 0]
+  #待打订单每页显示20笔
+  - [createTime, true, 1, 20, 0, 0, 0]
+  #待打订单每页显示50笔
+  - [createTime, true, 1, 50, 0, 0, 0]
+  #待打订单每页显示100笔
+  - [createTime, true, 1, 100, 0, 0, 0]
+  #已打订单每页显示10笔
+  - [printTime, true, 1, 10, 4, 0, 0]
+  #已打订单每页显示20笔
+  - [printTime, true, 1, 20, 4, 0, 0]
+  #已打订单每页显示50笔
+  - [printTime, true, 1, 50, 4, 0, 0]
+  #已打订单每页显示100笔
+  - [printTime, true, 1, 100, 4, 0, 0]
+
+packageNote:
+  #包裹备注,rcode,scode
+  #packageNote,rcode,scode
+  #包裹备注正常
+  - ['sunking', 0, 0]
+  #包裹备注为空
+  - ['', 0, 0]
+  #包裹备注为null
+  - [null, 1, 101]
+
+
+
+#login:
+#  - [{"userAccount":"15167168967","userPwd":"123456"},{"rcode":0,"scode":0}]
+#  - [{"userAccount":"15167168967","userPwd":"1234567"},{"rcode":1,"scode":104}]
+#  - [{"userAccount":"15167168967","userPwd":""},{"rcode":1,"scode":100}]
+#  - [{"userAccount":"","userPwd":"123456"},{"rcode":1,"scode":100}]
+#  - [{"userAccount":"","userPwd":""},{"rcode":1,"scode":100}]
+#  - [{"userAccount":"None","userPwd":"None"},{"rcode":1,"scode":104}]
+
+
+
 
 
