@@ -20,29 +20,29 @@ savePackages:
   #正确入参
   - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 0, 0]
   #寄件人姓名空参
-  - ["", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  - ["", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 0, 0]
   #寄件人地址空参
-  - ["接口测试寄件人", 15167168966, '', "", "", "", "", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  - ["接口测试寄件人", 15167168966, '', "", "", "", "", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 0, 0]
   #寄件人号码空参
-  - ["接口测试寄件人", '', '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  - ["接口测试寄件人", '', '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 0, 0]
   #寄件人号码错参
-  - ["接口测试寄件人", 10086, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  - ["接口测试寄件人", 10086, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 0, 0]
   #寄件人地址错参
   - ["接口测试寄件人", 15167168966, '', "xx省", "xx市", "xx区", "xxxx", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
   #收件人姓名空参
-  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 0, 0]
   #收件人号码空参
-  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 0, 0]
   #收件人地址空参
-  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"","consigneeCity":"","consigneeArea":"","consigneeAddress":""}], '', "服饰", '', 1, 1]
+  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"","consigneeCity":"","consigneeArea":"","consigneeAddress":""}], '', "服饰", '', 0, 0]
   #收件人号码错参
-  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'10086',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 1, 1]
+  - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'10086',"consigneePhone":"","consigneeProvince":"江西省","consigneeCity":"上饶市","consigneeArea":"广丰区","consigneeAddress":"月兔广场"}], '', "服饰", '', 0, 0]
   #收件人地址错参
   - ["接口测试寄件人", 15167168966, '', "浙江省", "杭州市", "西湖区", "紫荆天街", 1, [{"consigneeName":"接口测试收件人","consigneeMobile":'15167168968',"consigneePhone":"","consigneeProvince":"xx省","consigneeCity":"xx市","consigneeArea":"xx区","consigneeAddress":"xxxx"}], '', "服饰", '', 1, 1]
   #参数全为None
   - [null, null, '', null, null, null, null, 1, [{"consigneeName":null,"consigneeMobile":null,"consigneePhone":"","consigneeProvince":null,"consigneeCity":null,"consigneeArea":null,"consigneeAddress":null}], '', "服饰", '', 1, 1]
   #参数全为空
-  - ["", '', '', "", "", "", "", 1, [{"consigneeName":"","consigneeMobile":'',"consigneePhone":"","consigneeProvince":"","consigneeCity":"","consigneeArea":"","consigneeAddress":""}], '', "服饰", '', 1, 1]
+  - ["", '', '', "", "", "", "", 1, [{"consigneeName":"","consigneeMobile":'',"consigneePhone":"","consigneeProvince":"","consigneeCity":"","consigneeArea":"","consigneeAddress":""}], '', "服饰", '', 0, 0]
 
 queryPackages:
   #分类,是都倒序,当前页,每页显示,交易状态
