@@ -25,7 +25,7 @@ class TestDelpackage:
         request = s.post(url=url,data=body)
         r = request.json()
         # print("待打包裹列表查询返回结果:%s"% r)
-        pid = pid = r['data']['list'][0]['packageId']
+        pid = r['data']['list'][0]['packageId']
 
         print("获取待打包裹列表第一个包裹的ID %s"%(pid))
 

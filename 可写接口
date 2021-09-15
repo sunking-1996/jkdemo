@@ -1,0 +1,16 @@
+账户信息 - 获取客户信息
+https://typapi.fhd001.com/api/account/getUserAll.do
+token
+账户信息 - 修改用户密码
+https://typapi.fhd001.com/api/account/updateUserPwd.do
+userPwd
+token
+账户信息 - 获取用户风火码
+https://typapi.fhd001.com/api/account/getUserFhdCode.do
+token
+账户信息 - 获取账号打印状态
+https://typapi.fhd001.com/api/account/getFhdPrintStatus.do
+token
+统计 - 风火递绑定记录
+https://typapi.fhd001.com/api/stat/getFhdPlatformBindLogList.do
+token
